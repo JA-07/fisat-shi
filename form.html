@@ -1,0 +1,55 @@
+<html>
+<head>
+	<title>login</title>
+</head>
+<body>
+	<h1><u>registration form</h1>
+	<h4>enter the details</h4>
+	<form> 
+	<h2>personal info</h2>
+	<label>name</label>
+	<input type="text" id="username"><br><br>
+	DOB
+	<input type="date" id="date"><br><br>
+	<label>Gender</label>
+	<label>male</label>
+	<input type="radio" name="d" >
+	<label>female</label>
+	<input type="radio" name="d" ><br><br>
+	Email
+	<input type="email" id="email"><br>
+	<h2>course details</h2>
+	<label>course</label>
+	<label>btech</label>
+	<input type="radio" name="name">
+	<label>mtech</label>
+	<input type="radio" name="name">
+	<label>bca</label>
+	<input type="radio" name="name">
+	<label>mba</label>
+	<input type="radio" name="name">
+	<h2>address</h2>
+	Password
+	<input type="password" id="password">
+	<br><br> 
+	<button onclick="show()">submit</button>
+	<script type="text/javascript">
+		function show()
+		{
+		a=document.getElementById("username").value
+		b=document.getElementById("password").value
+		c=document.getElementById("email").value
+		d=document.getElementById("date").value
+		if(a==""||b==""||c==""||d=="")
+		{
+		alert("value is null");
+		}
+		else
+		{
+		alert("form is submitted");
+		}
+		}
+	</script>
+</form>
+</body>
+</html>	
